@@ -23,16 +23,6 @@ const Home = () => {
   const handleAmounth = (e) => {
     setAmounth(e.target.value)
   }
-  const sumRate = () => {
-    if (amounth >= 1) {
-      let dolarArg = dataArgentina
-      let multi = amounth * dolarArg
-      setAmounthArg(multi)
-    } else {
-      setAmounthArg(0)
-      setAmounth(0)
-    }
-  }
 
   const dataRequest = () => {
     fetch('http://api.currencylayer.com/live?access_key=8468d131ff9fc41223ad0a8a2beb3d26', {
@@ -58,7 +48,6 @@ const Home = () => {
         setDataParaguay(data.quotes.USDPYG.toFixed(2))
         setDataMexico(data.quotes.USDMXN.toFixed(2))
         setLastUpdate(newDate)
-        sumRate(handleAmounth)
       })
       .catch((error) => console.log('Error:', error))
   }
