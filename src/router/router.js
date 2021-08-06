@@ -1,12 +1,12 @@
 import { Switch, Route } from 'react-router-dom'
-import Home from '../modules/home/home.module'
+import Mainview from '../modules/home/mainview'
 
 const Router = () => {
   return (
     <>
       <Switch>
         <Route exact path='/'>
-          <Home />
+          <Mainview />
         </Route>
       </Switch>
     </>
