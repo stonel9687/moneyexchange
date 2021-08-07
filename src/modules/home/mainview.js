@@ -5,23 +5,27 @@ import MoneyExchange from './component/moneyexchange'
 const Home = () => {
   const [amounth, setAmounth] = useState('')
   const [amounthArg, setAmounthArg] = useState('')
+  const [amounthChi, setAmounthChi] = useState('')
+  const [amounthCol, setAmounthCol] = useState('')
+  const [amounthMex, setAmounthMex] = useState('')
+  const [amounthPar, setAmounthPar] = useState('')
   const [dataArgentina, setDataArgentina] = useState('')
   const [dataChile, setDataChile] = useState('')
   const [dataColombia, setDataColombia] = useState('')
   const [dataMexico, setDataMexico] = useState('')
   const [dataParaguay, setDataParaguay] = useState('')
   const [lastUpdate, setLastUpdate] = useState('')
-  const [amouthInFromCurrency, setAmouthInFromCurrency] = useState(true)
-  const [exchangeRate, setExchangeRate] = useState('')
-  console.log(exchangeRate)
-  console.log(amounth)
 
-  const handleAmounthArg = (e) => {
-    setAmounthArg(e.target.value)
-  }
+  console.log(`bandera multiplicacion`, typeof amounth)
+  console.log('cantidad de dolar', typeof dataArgentina)
 
   const handleAmounth = (e) => {
     setAmounth(e.target.value)
+    setAmounthArg(+e.target.value * +dataArgentina)
+    setAmounthChi(+e.target.value * +dataChile)
+    setAmounthCol(+e.target.value * +dataColombia)
+    setAmounthMex(+e.target.value * +dataMexico)
+    setAmounthPar(+e.target.value * +dataParaguay)
   }
 
   const dataRequest = () => {
@@ -71,9 +75,11 @@ const Home = () => {
           date={lastUpdate}
           amounthArg={amounthArg}
           amounth={amounth}
-          handleAmounthArg={handleAmounthArg}
+          amounthChi={amounthChi}
+          amounthCol={amounthCol}
+          amounthMex={amounthMex}
+          amounthPar={amounthPar}
           handleAmounth={handleAmounth}
-          exchangeRate={exchangeRate}
         />
       </div>
     </div>
