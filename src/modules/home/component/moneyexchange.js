@@ -24,89 +24,145 @@ const MoneyExchange = (props) => {
   } = props
 
   return (
-    <div className='container d-flex justify-content-center'>
-      <div className='text-aling-center col'>
-        <div className='justify-aling-center col p-5'>
-          <h2> La Forma mas Facil de </h2>
-          <h2>Convertir Tus Monedas</h2>
+    <div className='row mb-5'>
+      <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+        <div className='p-5'>
+          <h2 className='text-align-center'>
+            La Forma mas Facil de <br />
+            Convertir Tus Monedas
+          </h2>
         </div>
       </div>
-      <div class='card divbox col' style={{ width: '463px' }}>
-        <div class='card-body div-money col'>
-          <h5 class='card-title text-center'>Money Exchange</h5>
-          <p class='card-text'>Tasacion Actual por Paises</p>
-        </div>
-        <div className='d-flex justify-content-between col'>
-          <span>Ultima Actualizacion:</span>
-          <span>{date} </span>
-        </div>
-        <hr />
-        <div className='div-money col '>
-          <div className='d-flex justify-content-between mb-1 col'>
-            <img src={usaFlag} alt='logo' className='iconFlag' />
-            <p>Dolar</p>
-            <input placeholder='0' onChange={handleAmounth} value={amounth} type='text' className='input-change' />
+      <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+        <div class='card divbox mx-auto currency-card'>
+          <div class='card-body div-money'>
+            <h5 class='card-title text-center'>Money Exchange</h5>
+            <p class='card-text'>Tasacion Actual por Paises</p>
+          </div>
+          <div className='d-flex justify-content-between'>
+            <span>Ultima Actualizacion:</span>
+            <span>{date} </span>
           </div>
           <hr />
-          <div className='d-flex justify-content-between mb-2 col'>
-            <img src={argentFlag} alt='logo' className='iconFlag' />
-            <p>Argentina</p>
-            <span>{argentina}</span>
-            <input
-              placeholder='0'
-              onChange={handleAmounthArg}
-              value={amounthArg.toFixed(2)}
-              type='number'
-              className='input-change'
-            />
-          </div>
-          <div className='d-flex justify-content-between mb-2 col'>
-            <img src={chileFlag} alt='logo' className='iconFlag' />
-            <p>Chile</p>
-            <span>{chile}</span>
-            <input
-              placeholder='0'
-              onChange={handleAmounthArg}
-              value={amounthChi.toFixed(2)}
-              type='number'
-              className='input-change'
-            />
-          </div>
-          <div className='d-flex justify-content-between mb-2 col'>
-            <img src={colombiaFlag} alt='logo' className='iconFlag' />
-            <p>Colombia</p>
-            <span>{colombia}</span>
-            <input
-              placeholder='0'
-              onChange={handleAmounthArg}
-              value={amounthCol.toFixed(2)}
-              type='number'
-              className='input-change'
-            />
-          </div>
-          <div className='d-flex justify-content-between mb-2 col'>
-            <img src={mexFlag} alt='logo' className='iconFlag' />
-            <p>Mexico</p>
-            <span>{mexico}</span>
-            <input
-              placeholder='0'
-              onChange={handleAmounthArg}
-              value={amounthMex.toFixed(2)}
-              type='number'
-              className='input-change'
-            />
-          </div>
-          <div className='d-flex justify-content-between mb-2 col'>
-            <img src={paraguayFlag} alt='logo' className='iconFlag' />
-            <p>Paraguay</p>
-            <span>{paraguay}</span>
-            <input
-              placeholder='0'
-              onChange={handleAmounthArg}
-              value={amounthPar.toFixed(2)}
-              type='number'
-              className='input-change'
-            />
+          <div className='div-money'>
+            <div className='row'>
+              <div className='col-2'>
+                <img src={usaFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-5'>
+                <p>Dolar</p>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounth}
+                  value={amounth}
+                  type='text'
+                  className='input-change currency-input'
+                />
+              </div>
+            </div>
+            <hr />
+            <div className='row '>
+              <div className='col-2'>
+                <img src={argentFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-3'>
+                <p>Argentina</p>
+              </div>
+              <div className='col-2'>
+                <span>{argentina}</span>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounthArg}
+                  value={amounthArg}
+                  type='number'
+                  className='input-change  currency-input'
+                />
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-2'>
+                <img src={chileFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-3'>
+                <p>Chile</p>
+              </div>
+              <div className='col-2'>
+                <span>{chile}</span>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounthArg}
+                  value={amounthChi}
+                  type='number'
+                  className='input-change currency-input'
+                />
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-2'>
+                <img src={colombiaFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-3'>
+                <p>Colombia</p>
+              </div>
+              <div className='col-2'>
+                <span>{colombia}</span>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounthArg}
+                  value={amounthCol}
+                  type='number'
+                  className='input-change currency-input'
+                />
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-2'>
+                <img src={mexFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-3'>
+                <p>Mexico</p>
+              </div>
+              <div className='col-2'>
+                <span>{mexico}</span>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounthArg}
+                  value={amounthMex}
+                  type='number'
+                  className='input-change currency-input'
+                />
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-2'>
+                <img src={paraguayFlag} alt='logo' className='iconFlag' />
+              </div>
+              <div className='col-3'>
+                <p>Paraguay</p>
+              </div>
+              <div className='col-2'>
+                <span>{paraguay}</span>
+              </div>
+              <div className='col-5'>
+                <input
+                  placeholder='0'
+                  onChange={handleAmounthArg}
+                  value={amounthPar}
+                  type='number'
+                  className='input-change currency-input'
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

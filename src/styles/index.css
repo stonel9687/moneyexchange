@@ -18,7 +18,7 @@ code {
 .divbox {
   background-color: rgb(248, 250, 255);
   box-shadow: 10px 30px 90px rgba(39, 70, 199, .1);
-  border-radius: 2rem;
+  border-radius: 7px;
 }
 
 .nav-div-top {
@@ -35,13 +35,14 @@ code {
 
 .div-money {
   margin: 10px 10px 10px 10px;
-  padding: 20px 30px 0 30px;
+  padding: 20px 30px 0 15px;
 }
 
 .input-change {
   box-shadow: 10px 30px 90px rgba(39, 70, 199, .1);
-  border-radius: 10px;
+  border-radius: 7px;
   outline: none;
+  display: inline-block;
 }
 
 .iconFlag {
@@ -56,4 +57,21 @@ code {
 .bg-green {
   color: rgba(47, 87, 6, 0.822);
   font-weight: bold;
+}
+
+.currency-card {
+  width: 463px;
+}
+
+.currency-input {
+  width: 172px;
+}
+
+@media screen and (max-width:415px) {
+  .currency-card {
+    width: 100%;
+  }
+  .currency-input {
+    width: 150px;
+  }
 }
