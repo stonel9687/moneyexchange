@@ -24,7 +24,7 @@ const MoneyExchange = (props) => {
   } = props
 
   return (
-    <div className='row mb-5'>
+    <div className='row mb-5 mx-auto'>
       <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
         <div className='p-5'>
           <h2 className='text-align-center'>
