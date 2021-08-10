@@ -49,10 +49,10 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={usaFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-5'>
+              <div className='col-6'>
                 <p>Dolar</p>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounth}
@@ -67,13 +67,13 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={argentFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-3'>
+              <div className='col-4'>
                 <p>Argentina</p>
               </div>
               <div className='col-2'>
                 <span className='currency-p'>{argentina}</span>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounthArg}
@@ -87,13 +87,13 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={chileFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-3'>
+              <div className='col-4'>
                 <p>Chile</p>
               </div>
               <div className='col-2'>
                 <span className='currency-p'>{chile}</span>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounthArg}
@@ -107,13 +107,13 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={colombiaFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-3'>
+              <div className='col-4'>
                 <p>Colombia</p>
               </div>
               <div className='col-2'>
                 <span className='currency-p'>{colombia}</span>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounthArg}
@@ -127,13 +127,13 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={mexFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-3'>
+              <div className='col-4'>
                 <p>Mexico</p>
               </div>
               <div className='col-2'>
                 <span className='currency-p'>{mexico}</span>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounthArg}
@@ -147,13 +147,13 @@ const MoneyExchange = (props) => {
               <div className='col-2'>
                 <img src={paraguayFlag} alt='logo' className='iconFlag' />
               </div>
-              <div className='col-3'>
+              <div className='col-4'>
                 <p>Paraguay</p>
               </div>
               <div className='col-2'>
                 <span className='currency-p'>{paraguay}</span>
               </div>
-              <div className='col-5'>
+              <div className='col-4'>
                 <input
                   placeholder='0'
                   onChange={handleAmounthArg}
