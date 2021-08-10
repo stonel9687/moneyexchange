@@ -71,7 +71,7 @@ const MoneyExchange = (props) => {
                 <p>Argentina</p>
               </div>
               <div className='col-2'>
-                <span>{argentina}</span>
+                <span className='currency-p'>{argentina}</span>
               </div>
               <div className='col-5'>
                 <input
@@ -91,7 +91,7 @@ const MoneyExchange = (props) => {
                 <p>Chile</p>
               </div>
               <div className='col-2'>
-                <span>{chile}</span>
+                <span className='currency-p'>{chile}</span>
               </div>
               <div className='col-5'>
                 <input
@@ -111,7 +111,7 @@ const MoneyExchange = (props) => {
                 <p>Colombia</p>
               </div>
               <div className='col-2'>
-                <span>{colombia}</span>
+                <span className='currency-p'>{colombia}</span>
               </div>
               <div className='col-5'>
                 <input
@@ -131,7 +131,7 @@ const MoneyExchange = (props) => {
                 <p>Mexico</p>
               </div>
               <div className='col-2'>
-                <span>{mexico}</span>
+                <span className='currency-p'>{mexico}</span>
               </div>
               <div className='col-5'>
                 <input
@@ -151,7 +151,7 @@ const MoneyExchange = (props) => {
                 <p>Paraguay</p>
               </div>
               <div className='col-2'>
-                <span>{paraguay}</span>
+                <span className='currency-p'>{paraguay}</span>
               </div>
               <div className='col-5'>
                 <input

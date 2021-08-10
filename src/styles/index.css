@@ -67,11 +67,18 @@ code {
   width: 172px;
 }
 
+.currency-p {
+  padding-right: 0;
+}
+
 @media screen and (max-width:415px) {
   .currency-card {
     width: 100%;
   }
   .currency-input {
     width: 150px;
+  }
+  .currency-p {
+    padding: 0;
   }
 }
